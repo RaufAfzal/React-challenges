@@ -27,8 +27,8 @@ function App() {
   const [state, dispatch] = useReducer(reducer, {count: 0 , userInput: '', color: true})
 
   return (
-    <div className="App" style={{color: state.color ? "#9b870c" : "Black"}}>
-      <input type="text"
+    <div className='App' style={{color: state.color ? '#9b870c' : 'Black'}}>
+      <input type='text'
         placeholder='Enter an input'
         value = {state.userInput}
         onChange={(e) => dispatch({type: ACTION.USERINPUTVALUE, payload: e.target.value})}
